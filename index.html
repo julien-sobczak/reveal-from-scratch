@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Implementing reveal.js from scratch</title>
+
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="reveal.lite.css">
+	</head>
+
+	<body>
+
+		<div class="reveal concave"> <!-- fade/slide/concave -->
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Reveal.js</h1>
+					<h3>Implement the HTML Presentation Framework from Scratch</h3>
+					<p>
+						<small>Reveal.is was created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					</p>
+					<p>
+						<!-- Exemple of internal link -->
+						We will support link between slides, <a href="#/2">like this</a>.
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Vertical Slides are supported too !</h2>
+						<p>You could use <em>arrows</em> to navigate through all slides.</p>
+					</section>
+					<section>
+						<h2>You could adjust the window size</h2>
+						<p>Slides are automatically resized.</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Finished!</h2>
+					<p>
+						<small>Read the post: <a href="http://www.imlovinit.com">I'm lovin' I.T.</a></small>
+					</p>
+				</section>
+			</div>
+			
+			<!-- We directly add the controls to avoid to do that in JavaScript -->
+			<aside class="controls">
+				<div class="navigate-left"></div>
+				<div class="navigate-right"></div>
+				<div class="navigate-up"></div>
+				<div class="navigate-down"></div>
+			</aside>
+
+		</div>
+
+		<script src="reveal.lite.js"></script>
+
+		<script>
+		
+			Reveal.initialize();
+			
+		</script>
+
+	</body>
+</html>
